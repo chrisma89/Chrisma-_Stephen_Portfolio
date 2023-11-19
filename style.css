@@ -1,3 +1,35 @@
+body {
+  width:1000px;
+  height: vh;
+  margin: 0 auto;
+  background-color:white;
+  padding:0px;
+}
+
+#welcomebanner {
+  box-sizing: border-box;
+  background-color: rgb(144, 252, 252);
+  margin:0;
+  padding: 15px;
+  width: 980px;
+  height:200px;
+}
+
+#welcomebanner img {
+  display: block;
+  float: right;
+  border-block-end-color: black;
+  position:absolute;
+  top: 50px;
+  right: 200px;
+}
+
+#navigation {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 #horiseonimg,
  #profileimg,
  #linkedinimg,
