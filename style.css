@@ -1,50 +1,137 @@
 body {
-  width:1000px;
+  width:vw;
   height: vh;
-  margin: 0 auto;
+  margin: 10px;;
   background-color:white;
-  padding:0px;
+  padding:10px;
 }
 
 #welcomebanner {
   box-sizing: border-box;
   background-color: rgb(144, 252, 252);
-  margin:0;
-  padding: 15px;
-  width: 980px;
-  height:200px;
+  padding:15px;
+  height:150px;
 }
 
 #welcomebanner img {
-  display: block;
+  
   float: right;
   border-block-end-color: black;
   position:absolute;
-  top: 50px;
-  right: 200px;
+  top: 88px;
+  right: 180px;
 }
 
+ h1 {
+  background-color: rgb(37, 224, 227);
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ font-size: 28px;
+ padding:15px;
+ text-align: center;
+ margin-bottom: 0;
+ color: black;
+}
+
+
 #navigation {
+  position:absolute;
+  height:175px;
   display:flex;
   flex-direction: row;
   justify-content: center;
+  align-items:end;
+  width: 90%;
+
+}
+
+#navigation a {
+  color: black;
+  padding:60px;
+  font-size :24px;
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+ .main {
+  display:grid;
+  border:10px;
+
+  grid-template-rows: 300px 300px 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "aboutmehead aboutmecontent aboutmecontent"
+  "projectshead project1 project1" 
+  "projectshead project2 project3" 
+  "projectshead project4 project5" 
+  "contacthead contactcontent contactcontent";
+ }
+.aboutmehead {
+  grid-area: aboutmehead;
+}
+
+.aboutmecontent{
+  grid-area: aboutmecontent;
+  display:grid;
+}
+
+.projectshead {
+  grid-area: projectshead;
+  display:grid;
+}
+
+.project1 a {
+  grid-area: project1;
+}
+
+
+.project2 {
+  grid-area: project2;
+}
+
+
+.project3 {
+  grid-area: project3;
+}
+
+
+.project4 {
+  grid-area: project4;
+}
+
+
+.project5 {
+  grid-area: project5;
+}
+
+.contacthead {
+  grid-area: contacthead;
+}
+
+.contactcontent {
+grid-area: contactcontent;
 }
 
 #horiseonimg,
- #profileimg,
  #linkedinimg,
  #preworkimg,
  #project1img,
  #project2img {
+  padding:10px;
+  height:100%;
+  width:100%;
+  margin-bottom:20px;
+  background-repeat:no-repeat;
+  background-position:center;
+}
+
+#profileimg {
   width:200px;
   height :200px;
 }
 
-.navigationbar {
-  display:flex
-}
-
-.navsegmants {
-  flex-direction: row;
-  justify-content: center;
+#horiseonimg {
+  height:100%;
+  width:200%;
+  background-repeat:no-repeat;
+  background-position:center;
 }
