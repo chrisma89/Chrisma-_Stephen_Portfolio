@@ -1,7 +1,7 @@
 body {
   width:vw;
   height: vh;
-  margin: 10px;;
+  margin: 10px;
   background-color:white;
   padding:10px;
 }
@@ -23,7 +23,7 @@ body {
 }
 
  h1 {
-  background-color: rgb(37, 224, 227);
+  background-color: #25e0e3;
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 28px;
  padding:15px;
@@ -67,12 +67,18 @@ body {
  }
 .aboutmehead {
   grid-area: aboutmehead;
+  background-color: ;
 }
 
 .aboutmecontent{
   grid-area: aboutmecontent;
   display:grid;
-}
+  background-color: rgb(243, 209, 145);
+  padding:20px;
+  font-size: 18px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  }
+
 
 .projectshead {
   grid-area: projectshead;
@@ -111,17 +117,16 @@ body {
 grid-area: contactcontent;
 }
 
-#horiseonimg,
  #linkedinimg,
  #preworkimg,
  #project1img,
  #project2img {
-  padding:10px;
   height:100%;
   width:100%;
-  margin-bottom:20px;
   background-repeat:no-repeat;
   background-position:center;
+  border: 10px solid  #25e0e3;
+
 }
 
 #profileimg {
@@ -130,8 +135,27 @@ grid-area: contactcontent;
 }
 
 #horiseonimg {
-  height:100%;
+  border: 10px solid  #25e0e3;
+  height:150%;
   width:200%;
   background-repeat:no-repeat;
   background-position:center;
 }
+
+.aboutmecontent,
+#Projects,
+.contactcontent,
+.aboutmehead,
+.projectshead,
+.contacthead {
+  display:grid;
+  align-items: center;
+  justify-content:center;
+  border:20px;
+}
+
+a:hover {
+color:ghostwhite;
+}
+
+
