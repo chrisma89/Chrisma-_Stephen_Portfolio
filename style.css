@@ -2,13 +2,13 @@ body {
   width:vw;
   height: vh;
   margin: 10px;
-  background-color:white;
+  background-color:rgb(250, 250, 235);
   padding:10px;
 }
 
 #welcomebanner {
   box-sizing: border-box;
-  background-color: wheat;
+  background-color: rgb(246, 231, 205);
   padding:15px;
   height:75px;
   border-bottom: 5px solid rgb(13, 13, 53);
@@ -92,28 +92,43 @@ body {
   background-color: rgb(13, 13, 53);
 }
 
-.project1 a {
+.project1  {
   grid-area: project1;
+  border: 8px solid  rgb(250, 250, 235);
 }
 
 
 .project2 {
   grid-area: project2;
+  border: 8px solid  rgb(250, 250, 235);
 }
 
 
 .project3 {
   grid-area: project3;
+  border: 8px solid  rgb(250, 250, 235);
 }
 
 
 .project4 {
   grid-area: project4;
+  border: 8px solid  rgb(250, 250, 235);
 }
 
 
 .project5 {
   grid-area: project5;
+  border: 8px solid  rgb(250, 250, 235);
+}
+
+.project1 p {
+  position:relative;
+  top:-60px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+
+  z-index: 500;
+  color:rgb(13, 13, 53, 0.7);
 }
 
 .contacthead {
@@ -143,8 +158,8 @@ background-color:rgb(250, 250, 235);
   width:100%;
   background-repeat:no-repeat;
   background-position:center;
-  border: 10px solid  rgb(250, 250, 235);
-
+  border: 8px solid  rgb(250, 250, 235);
+  
 }
 
 #profileimg {
@@ -153,9 +168,9 @@ background-color:rgb(250, 250, 235);
 }
 
 #horiseonimg {
-  border: 10px solid  rgb(250, 250, 235);
+  border: 8px solid  rgb(250, 250, 235);
   height:100%;
-  width:200%;
+  width:100%;
   background-repeat:no-repeat;
   background-position:center;
 }
@@ -175,4 +190,19 @@ a:hover {
 color: rgb(255, 96, 176);
 }
 
+#horiseonimg:hover {
+  opacity: 0.3;
+}
+#linkedinimg:hover {
+  opacity: 0.3;
+}
+ #preworkimg:hover {
+  opacity: 0.3;
+ }
+ #project1img:hover {
+  opacity: 0.3;
+ }
+ #project2img:hover {
+  opacity: 0.3;
+ }
 
