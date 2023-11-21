@@ -31,7 +31,7 @@ body {
 }
 
  h1 {
-  background-color: var(--navy);;
+  background-color: var(--navy);
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 24px;
  padding:15px;
@@ -78,7 +78,7 @@ body {
   grid-area: aboutmehead;
   background-color: var(--navy);
   color:var(--beige);
-  border: 50px solid var(--beige);;
+  border: 50px solid var(--beige);
   }
 
 .aboutmecontent{
@@ -159,11 +159,11 @@ font-size: 24px;
 border-bottom:5px solid var(--navy);
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
+
 .contenttext {
   text-decoration:none;
   align-items: center;
   padding:20px;
-
 }
 
 
@@ -176,8 +176,7 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
   width:100%;
   background-repeat:no-repeat;
   background-position:center;
-  border: 8px solid  var(--beige);
-  
+  border: 8px solid  var(--beige);  
 }
 
 
