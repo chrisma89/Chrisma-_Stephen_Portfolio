@@ -1,8 +1,13 @@
+:root {
+  --navy: rgb(13, 13, 53);
+  --beige: rgb(250, 250, 235);
+}
+
 body {
   width:vw;
   height: vh;
   margin: 10px;
-  background-color:rgb(250, 250, 235);
+  background-color: var(--beige);
   padding:10px;
 }
 
@@ -11,7 +16,7 @@ body {
   background-color: rgb(246, 231, 205);
   padding:15px;
   height:75px;
-  border-bottom: 5px solid rgb(13, 13, 53);
+  border-bottom: 5px solid var(--navy);
 }
 
 #welcomebanner img {
@@ -26,14 +31,14 @@ body {
 }
 
  h1 {
-  background-color: rgb(13, 13, 53);
+  background-color: var(--navy);;
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 24px;
  padding:15px;
  height:50px;
  text-align: center;
  margin-bottom: 0;
- color: rgb(250, 250, 235);
+ color: var(--beige);
 }
 
 
@@ -49,12 +54,11 @@ body {
 }
 
 #navigation a {
-  color: rgb(13, 13, 53);
+  color: var(--navy);
   padding:60px;
   font-size :24px;
   text-decoration: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  text-shadow: rgb(13, 13, 53);
  }
 
  .main {
@@ -72,67 +76,69 @@ body {
  }
 .aboutmehead {
   grid-area: aboutmehead;
-  background-color: rgb(13, 13, 53);
-  color:rgb(250, 250, 235);
-  border: 50px solid rgb(254, 208, 215);
-}
+  background-color: var(--navy);
+  color:var(--beige);
+  border: 50px solid var(--beige);;
+  }
 
 .aboutmecontent{
   grid-area: aboutmecontent;
  
-  background-color:rgb(250, 250, 235);
+  background-color:var(--beige);
   padding:20px;
   font-size: 20px;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  border-bottom:5px solid rgb(13, 13, 53);
-border-top:5px solid rgb(13, 13, 53);
-border-right:5px solid rgb(13, 13, 53);
+  font-family:cursive;
+  border-bottom:5px solid var(--navy);
   }
 
 
 .projectshead {
   grid-area: projectshead;
   display:grid;
-  color:rgb(250, 250, 235);
-  background-color: rgb(13, 13, 53);
+  color:var(--beige);
+  background-color: var(--navy);
 }
 
 .project1  {
   grid-area: project1;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid  var(--beige);
 }
 
 
 .project2 {
   grid-area: project2;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid  var(--beige);
 }
 
 
 .project3 {
   grid-area: project3;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid  var(--beige);
 }
 
 
 .project4 {
   grid-area: project4;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid var(--beige);
 }
 
 
 .project5 {
   grid-area: project5;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid var(--beige);
 }
 
-.project1 p {
+.project1 p,
+.project2 p,
+.project3 p,
+.project4 p,
+.project5 p {
   position:relative;
   top:-90px;
   right:-7px;
   padding:15px;
   font-size: 20px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
    z-index: 500;
   color:white;
   background-color: rgb(13, 13, 53, 0.5);
@@ -140,23 +146,24 @@ border-right:5px solid rgb(13, 13, 53);
 
 .contacthead {
   grid-area: contacthead;
-  color:rgb(250, 250, 235);
-  background-color: rgb(13, 13, 53);
+  color:var(--beige);
+  background-color: var(--navy);
 }
 
 .contactcontent {
 grid-area: contactcontent;
-background-color:rgb(250, 250, 235);
+background-color:var(--beige);
 text-align:center;
 padding:135px;
 font-size: 24px;
-border-bottom:5px solid rgb(13, 13, 53);
-
+border-bottom:5px solid var(--navy);
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 .contenttext {
   text-decoration:none;
   align-items: center;
   padding:20px;
+
 }
 
 
@@ -169,13 +176,13 @@ border-bottom:5px solid rgb(13, 13, 53);
   width:100%;
   background-repeat:no-repeat;
   background-position:center;
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid  var(--beige);
   
 }
 
 
 #horiseonimg {
-  border: 8px solid  rgb(250, 250, 235);
+  border: 8px solid var(--beige);
   height:100%;
   width:100%;
   background-repeat:no-repeat;
