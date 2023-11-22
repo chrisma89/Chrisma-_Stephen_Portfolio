@@ -8,7 +8,7 @@ The starter code was used to build on the structure of the webpage including the
 
 Creating this repository and the following deployment has been helpful to understand basic concepts and also allowed me to delve into adding some effects that were new to me. The process of constructing the html and the css was challenging at times but very rewarding overall. I thoroughly enjoyed bringing this webpage to life, right from the designing of the wireframe in excalidraw to deploying the site. 
 
-The biggest challenges was in the creation of the CSS file and modifying its properties and values to see the design executed. I had to compromise on a couple of design features but i hope that i would be able to see them realised as i learn and add on to my skillset. I have been able to make use of flexbox and the grid system to manipulate the elements on the webpage.CSS selectors and variables are in use in the stylesheet. 
+The biggest challenges was in the creation of the CSS file and modifying its properties and values to see the design executed. I had to compromise on a couple of design features but i hope that i would be able to see them realised as i learn and add on to my skillset. I have been able to make use of the grid system to manipulate the elements on the webpage.CSS selectors and variables are in use in the stylesheet. 
 
 The git commands have been used for version control throughout the creation of this repository.
 

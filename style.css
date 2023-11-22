@@ -4,53 +4,55 @@
 }
 
 body {
-  width:vw;
-  height: vh;
-  margin: 10px;
   background-color: var(--beige);
-  padding:10px;
 }
+
+/* Header and navigation */
 
 #welcomebanner {
-  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 75px 75px;
+  grid-template-columns: 5fr 1fr;
+  grid-template-areas: "header profileimg"
+                       "navigation profileimg";
   background-color: rgb(246, 231, 205);
-  padding:15px;
-  height:75px;
-  border-bottom: 5px solid var(--navy);
+  border-bottom: 5px solid var(--navy); 
 }
 
-#welcomebanner img {
-  
-  float: right;
-  border-block-end-color: black;
-  position:absolute;
-  top: 37px;
-  right: 130px;
+#h1 {
+  grid-area: header;
+}
+
+#profileimg {
+  grid-area:profileimg;
+}
+
+#navigation {
+  grid-area:navigation;
+}
+
+#profileimg {
   width:150px;
   height :150px;
 }
 
  h1 {
   background-color: var(--navy);
- font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
- font-size: 24px;
- padding:15px;
- height:50px;
- text-align: center;
- margin-bottom: 0;
- color: var(--beige);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+  margin:0;
+  padding:15px; 
+  height:40px;
+  text-align: left;
+  color: var(--beige);
 }
 
 
-#navigation {
-  position:absolute;
-  height:100px;
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items:end;
-  width: 90%;
-
+#navigation { 
+  height:60px;
+  padding:20px;
+  text-align: center;
+  border-bottom: 10px solid var(--blue); 
 }
 
 #navigation a {
@@ -61,12 +63,13 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  }
 
+ /*Content section*/
+
  .main {
   display:grid;
-  border:10px;
-
+  border-bottom:5px solid var(--navy); 
   grid-template-rows: 300px 300px 300px 300px 300px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 0.7fr 1fr 1fr;
   grid-template-areas: 
   "aboutmehead aboutmecontent aboutmecontent"
   "projectshead project1 project1" 
@@ -74,23 +77,25 @@ body {
   "projectshead project4 project5" 
   "contacthead contactcontent contactcontent";
  }
+
+ /* About me section*/
+
 .aboutmehead {
   grid-area: aboutmehead;
   background-color: var(--navy);
   color:var(--beige);
-  border: 50px solid var(--beige);
   }
 
 .aboutmecontent{
   grid-area: aboutmecontent;
- 
   background-color:var(--beige);
   padding:20px;
   font-size: 20px;
-  font-family:cursive;
-  border-bottom:5px solid var(--navy);
+  font-family:'Times New Roman', Times, serif;
+  border-bottom:5px solid var(--navy); 
   }
 
+ /* Projects section*/
 
 .projectshead {
   grid-area: projectshead;
@@ -104,28 +109,28 @@ body {
   border: 8px solid  var(--beige);
 }
 
-
 .project2 {
   grid-area: project2;
   border: 8px solid  var(--beige);
 }
-
 
 .project3 {
   grid-area: project3;
   border: 8px solid  var(--beige);
 }
 
-
 .project4 {
   grid-area: project4;
   border: 8px solid var(--beige);
-}
+  border-bottom:5px solid var(--navy); 
 
+}
 
 .project5 {
   grid-area: project5;
   border: 8px solid var(--beige);
+  border-bottom:5px solid var(--navy); 
+
 }
 
 .project1 p,
@@ -135,14 +140,16 @@ body {
 .project5 p {
   position:relative;
   top:-90px;
-  right:-7px;
+  right:0;
   padding:15px;
   font-size: 20px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   z-index: 500;
   color:white;
-  background-color: var (--navy);
+  background-color: rgb(13, 13, 53,0.3);
 }
+
+ /* Contact section*/
 
 .contacthead {
   grid-area: contacthead;
@@ -167,21 +174,13 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 
+ /* Images */
 
  #linkedinimg,
  #preworkimg,
  #project1img,
- #project2img {
-  height:100%;
-  width:100%;
-  background-repeat:no-repeat;
-  background-position:center;
-  border: 8px solid  var(--beige);  
-}
-
-
-#horiseonimg {
-  border: 8px solid var(--beige);
+ #project2img,
+ #horiseonimg {
   height:100%;
   width:100%;
   background-repeat:no-repeat;
@@ -189,15 +188,15 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
 }
 
 .aboutmecontent,
-#Projects,
+ #Projects,
 .aboutmehead,
 .projectshead,
 .contacthead {
   display:grid;
   align-items: center;
   justify-content:center;
-  border:20px;
 }
+
 
 a:hover {
 color: rgb(255, 96, 176);
@@ -206,6 +205,7 @@ color: rgb(255, 96, 176);
 #horiseonimg:hover {
   opacity: 0.3;
 }
+
 #linkedinimg:hover {
   opacity: 0.3;
 }
@@ -218,4 +218,33 @@ color: rgb(255, 96, 176);
  #project2img:hover {
   opacity: 0.3;
  }
+ 
+ #navigation a:hover {
+   color: rgb(255, 96, 176);
+ }
 
+ @media only screen and (max-width:600px) {
+
+.main {
+  grid-template-rows: repeat(9 300px);
+  grid-template-columns: 1fr;
+  grid-template-areas:"aboutmehead"
+   "aboutmecontent"
+  "projectshead"
+   "project1" 
+  "project2" 
+  "project3" 
+  "project4" 
+  "project5" 
+  "contacthead"
+  "contactcontent" ;
+}
+#welcomebanner {
+  display: grid;
+  grid-template-rows: 150px 150px 150px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                      "profileimg"
+                      "navigation";
+}
+}
