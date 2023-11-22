@@ -41,7 +41,7 @@ The code can be viewed at github: https://github.com/chrisma89/Chrisma_Stephen_P
 
 The webpage could be used to know a little bit about me and the projects that i have completed. The github repository can be used to see the codes written for the various elements of the webpage. 
 
-The screenshot of the webpage is below : ![webpagescreenshot](/images/webpagescreenshot2.png)
+The screenshot of the webpage is below : ![webpagescreenshot](images/webpagescreenshot2.png)
 
 ### Credits
 
