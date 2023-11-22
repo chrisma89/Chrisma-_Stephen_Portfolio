@@ -241,14 +241,10 @@ color: rgb(255, 96, 176);
 }
 #welcomebanner {
   display: grid;
-  grid-template-rows: 150px 150px 150px;
+  grid-template-rows: 30% 40% 30%;
   grid-template-columns: 1fr;
   grid-template-areas: "header"
                       "profileimg"
                       "navigation";
-}
-
-#navigation {
-  display:none;
 }
 }
