@@ -11,7 +11,7 @@ body {
 
 #welcomebanner {
   display: grid;
-  grid-template-rows: 75px 75px;
+  grid-template-rows: 60% 40%;
   grid-template-columns: 5fr 1fr;
   grid-template-areas: "header profileimg"
                        "navigation profileimg";
@@ -32,8 +32,8 @@ body {
 }
 
 #profileimg {
-  width:150px;
-  height :150px;
+  width:95%;
+  height :100%;
 }
 
  h1 {
@@ -43,7 +43,7 @@ body {
   margin:0;
   padding:15px; 
   height:40px;
-  text-align: left;
+  text-align: center;
   color: var(--beige);
 }
 
@@ -246,5 +246,9 @@ color: rgb(255, 96, 176);
   grid-template-areas: "header"
                       "profileimg"
                       "navigation";
+}
+
+#navigation {
+  display:none;
 }
 }
